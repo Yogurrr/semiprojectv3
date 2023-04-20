@@ -12,9 +12,8 @@
         <header class="row">
             <div class="col"><h1>Lorem Ipsum</h1></div>
             <div class="col text-end">
-                <div class="col"><button type="button" class="btn btn-danger"
-                                         data-bs-target="#loginfrm" data-bs-toggle="modal">로그인</button></div>
-                <div class="col"><button type="button" class="btn btn-primary">회원가입</button></div>
+                <button type="button" class="btn btn-danger" data-bs-target="#loginfrm" data-bs-toggle="modal">로그인</button>
+                <button type="button" class="btn btn-primary">회원가입</button>
             </div>
         </header>
         <nav></nav>
