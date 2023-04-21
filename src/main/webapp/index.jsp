@@ -31,12 +31,20 @@
         <div id="main">
             <div class="row">
                 <div class="col-12"><h1 class="display-3 text-center fw-bold p-3">初期日 PROJECT 補完計劃</h1></div>
-                <div class="col-8 offset-2">
+                <div class="col-8 offset-3">
                     <img src="img/golden-eagle.jpg" class="img-fluid">
                 </div>
             </div>
             <div class="row">
-                <%-- !!! --%>
+                <div class="col-8 offset-2 text-center p-3">
+                    <p> Aliquam vel dolor id tellus vulputate convallis eu nec orci. Integer sed maximus tortor.
+                        Mauris et diam id justo vulputate convallis ac eget felis. Sed id dolor pretium,
+                        elementum nunc sed, faucibus magna. Praesent sed metus vel odio pellentesque sagittis.
+                        Nunc in sapien tempor leo pharetra dictum. Vestibulum tempor lacus ut ultricies sollicitudin.
+                        Sed a lacus in magna pharetra lacinia in imperdiet ligula. Nullam nec consequat lectus.
+                    </p>
+                    <div><button class="btn btn-success">지금 바로 시작하기</button></div>
+                </div>
             </div>
             <div class="row"></div>
         </div>
