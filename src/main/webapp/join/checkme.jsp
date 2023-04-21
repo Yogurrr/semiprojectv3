@@ -61,13 +61,13 @@
                 <div class="row">
                     <div class="col-5 offset-1">
                         <div class="row mb-3">
-                            <label for="name" class="col-4 col-form-label text-warning text-end">이름</label>
+                            <label for="name" class="col-3 col-form-label text-warning text-end">이름</label>
                             <div class="col-6">
                                 <input type="text" name="name" id="name" class="form-control border-warning">
                             </div>
                         </div>
                         <div class="row mb-2">
-                            <label for="byear" class="col-4 col-form-label text-warning text-end">생년월일</label>
+                            <label for="byear" class="col-3 col-form-label text-warning text-end">생년월일</label>
                             <div class="col-3">
                                 <select id="byear" name="byear" class="form-select col-3 border-warning">
                                     <option>년도</option>
@@ -77,8 +77,8 @@
                                     <option>2020</option>
                                 </select>
                             </div>
-                            <div class="col-2">
-                                <select id="bmonth" name="bmonth" class="form-select col-2 border-warning">
+                            <div class="col-3">
+                                <select id="bmonth" name="bmonth" class="form-select col-3 border-warning">
                                     <option>월</option>
                                     <option>01</option>
                                     <option>02</option>
@@ -86,8 +86,8 @@
                                     <option>04</option>
                                 </select>
                             </div>
-                            <div class="col-2">
-                                <select id="bday" name="bday" class="form-select col-2 border-warning">
+                            <div class="col-3">
+                                <select id="bday" name="bday" class="form-select col-3 border-warning">
                                     <option>일</option>
                                     <option>1</option>
                                     <option>2</option>
@@ -100,7 +100,7 @@
                             </div>
                         </div>
                         <div class="row mb-3">
-                            <label for="gender" class="col-4 col-form-label text-warning text-end">성별</label>
+                            <label for="gender" class="col-3 col-form-label text-warning text-end">성별</label>
                                 <div class="col-3 mt-2">
                                     <div class="form-check">
                                         <input type="radio" id="gmale" name="gender" value="m" checked class="form-check-input">
@@ -109,16 +109,28 @@
                                 </div>
                                 <div class="col-3 mt-2">
                                     <div class="form-check">
-                                        <input type="radio" id="fmale" name="gender" value="f" class="form-check-input">
+                                        <input type="radio" id="fmale" name="fmale" value="f" class="form-check-input">
                                         <label for="fmale" class="form-check-label text-warning">여자</label>
                                     </div>
                                 </div>
                         </div>
                     </div>
-                    <div class="col-5"></div>
+                    <div class="col-5">
+                        <ul>
+                            <li>주민등록번호 입력 없이 전화번호로 회원가입이 가능합니다.</li>
+                            <li>이름, 생년월일과 성별은 <span style="color:red">추후 변경할 수 없습니다.</span></li>
+                            <li><span style="color:red">휴대폰 가입인증</span>을 하셔야 공개 게시판 이용이 가능합니다.</li>
+                        </ul>
+                    </div>
                 </div>
                 <div class="row">
-                    <button type="button" class="btn btn-success">ㅇㅇ</button>
+                    <div class="col text-center">
+                        <hr class="w-75 mx-auto">   <%-- margin x축 auto --%>
+                        <button type="button" id="checkbtn" class="btn btn-primary">
+                            <i class="fas fa-check"> 확인하기</i></button>
+                        <button type="button" id="cancelbtn" class="btn btn-danger">
+                            <i class="fas fa-times"> 취소하기</i></button>
+                    </div>
                 </div>
             </form>
         </div>
