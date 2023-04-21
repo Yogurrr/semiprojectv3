@@ -28,7 +28,18 @@
             </ul>
         </nav>
 
-        <div id="main"></div>
+        <div id="main">
+            <div class="row">
+                <div class="col-12"><h1 class="display-3 text-center fw-bold p-3">初期日 PROJECT 補完計劃</h1></div>
+                <div class="col-8 offset-2">
+                    <img src="img/golden-eagle.jpg" class="img-fluid">
+                </div>
+            </div>
+            <div class="row">
+                <%-- !!! --%>
+            </div>
+            <div class="row"></div>
+        </div>
 
         <footer>
             <h6 class="col text-end bg-dark bg-opacity-10 p-3">Copyright&copy; Lorem Ipsum 2023. Yogurrr.
