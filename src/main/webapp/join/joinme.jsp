@@ -56,16 +56,15 @@
         </div>
         <div class="card card-body bg-light mt-5 mx-3">
             <h3 class="mb-5">일반회원</h3>
-            <form id="checkfrm1" name="checkfrm1">
+            <form id="joinfrm1" name="joinfrm1">
                 <div class="row">
-                    <div class="col-5 offset-1">
-                        <div class="row mb-3">
-                            <label for="name" class="col-3 col-form-label text-warning text-end">이름</label>
-                            <div class="col-6">
-                                <input type="text" name="name" id="name" class="form-control border-warning">
-                            </div>
+                    <div class="row mb-3">
+                        <label for="name" class="col-3 col-form-label text-warning text-end">이름</label>
+                        <div class="col-6">
+                            <input type="text" name="name" id="name" class="form-control border-warning">
                         </div>
-                        <div class="row mb-2">
+                        </div>
+                    <div class="row mb-2">
                             <label for="byear" class="col-3 col-form-label text-warning text-end">생년월일</label>
                             <div class="col-3">
                                 <select id="byear" name="byear" class="form-select col-3 border-warning">
@@ -98,7 +97,7 @@
                                 </select>
                             </div>
                         </div>
-                        <div class="row mb-3">
+                    <div class="row mb-3">
                             <label for="gender" class="col-3 col-form-label text-warning text-end">성별</label>
                             <div class="col-3 mt-2">
                                 <div class="form-check">
@@ -113,22 +112,14 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-5">
-                        <ul>
-                            <li>주민등록번호 입력 없이 전화번호로 회원가입이 가능합니다.</li>
-                            <li>이름, 생년월일과 성별은 <span style="color:red">추후 변경할 수 없습니다.</span></li>
-                            <li><span style="color:red">휴대폰 가입인증</span>을 하셔야 공개 게시판 이용이 가능합니다.</li>
-                        </ul>
-                    </div>
                 </div>
                 <div class="row">
                     <div class="col text-center">
                         <hr class="w-75 mx-auto">   <%-- margin x축 auto --%>
-                        <button type="button" id="checkbtn" class="btn btn-primary">
-                            <i class="fas fa-check"> 확인하기</i></button>
+                        <button type="button" id="joinbtn" class="btn btn-primary">
+                            <i class="fas fa-check-circle"> 입력완료</i></button>
                         <button type="button" id="cancelbtn" class="btn btn-danger">
-                            <i class="fas fa-times"> 취소하기</i></button>
+                            <i class="fas fa-times-circle"> 입력취소</i></button>
                     </div>
                 </div>
             </form>
