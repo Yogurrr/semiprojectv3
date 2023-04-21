@@ -56,62 +56,89 @@
         </div>
         <div class="card card-body bg-light mt-5 mx-3">
             <h3 class="mb-5">일반회원</h3>
+
             <form id="joinfrm1" name="joinfrm1">
                 <div class="row">
-                    <div class="row mb-3">
-                        <label for="name" class="col-3 col-form-label text-warning text-end">이름</label>
-                        <div class="col-6">
-                            <input type="text" name="name" id="name" class="form-control border-warning">
+                    <div class="row col-11 offset-1 mb-3 align-items-center">
+                        <label for="name" class="col-2 form-label text-danger text-end">이름</label>
+                        <div class="col-3">
+                            <input type="text" name="name" id="name"
+                                   class="form-control border-danger bg-light" readonly>
                         </div>
+                    </div>
+                    <div class="row col-11 offset-1 mb-3 align-items-center">
+                        <label for="jumin1" class="col-2 form-label text-danger text-end">주민번호</label>
+                        <div class="col-3">
+                            <input type="text" name="jumin1" id="jumin1"
+                                   class="form-control border-danger bg-light" readonly>
                         </div>
-                    <div class="row mb-2">
-                            <label for="byear" class="col-3 col-form-label text-warning text-end">생년월일</label>
-                            <div class="col-3">
-                                <select id="byear" name="byear" class="form-select col-3 border-warning">
-                                    <option>년도</option>
-                                    <option>2023</option>
-                                    <option>2022</option>
-                                    <option>2021</option>
-                                    <option>2020</option>
-                                </select>
-                            </div>
-                            <div class="col-3">
-                                <select id="bmonth" name="bmonth" class="form-select col-3 border-warning">
-                                    <option>월</option>
-                                    <option>01</option>
-                                    <option>02</option>
-                                    <option>03</option>
-                                    <option>04</option>
-                                </select>
-                            </div>
-                            <div class="col-3">
-                                <select id="bday" name="bday" class="form-select col-3 border-warning">
-                                    <option>일</option>
-                                    <option>1</option>
-                                    <option>2</option>
-                                    <option>3</option>
-                                    <option>4</option>
-                                    <option>5</option>
-                                    <option>6</option>
-                                    <option>7</option>
-                                </select>
-                            </div>
+                        <div class="col-3">
+                            <input type="text" name="jumin2" id="jumin2"
+                                   class="form-control border-danger bg-light" readonly>
                         </div>
-                    <div class="row mb-3">
-                            <label for="gender" class="col-3 col-form-label text-warning text-end">성별</label>
-                            <div class="col-3 mt-2">
-                                <div class="form-check">
-                                    <input type="radio" id="gmale" name="gender" value="m" checked class="form-check-input">
-                                    <label for="gmale" class="form-check-label text-warning">남자</label>
-                                </div>
-                            </div>
-                            <div class="col-3 mt-2">
-                                <div class="form-check">
-                                    <input type="radio" id="fmale" name="fmale" value="f" class="form-check-input">
-                                    <label for="fmale" class="form-check-label text-warning">여자</label>
-                                </div>
-                            </div>
+                    </div>
+                    <div class="row col-11 offset-1 mb-3 align-items-center">
+                        <label for="uid" class="col-2 form-label text-danger text-end">아이디</label>
+                        <div class="col-3">
+                            <input type="text" name="userid" id="uid"
+                                   class="form-control border-danger">
                         </div>
+                        <div class="col-auto">
+                            <span id="uidmsg" class="form-text">
+                                6~16 자의 영문 소문자, 숫자와 특수기호(_)만 사용할 수 있습니다.
+                            </span>
+                        </div>
+                    </div>
+                    <div class="row col-11 offset-1 mb-3 align-items-center">
+                        <label for="pwd" class="col-2 form-label text-danger text-end">비밀번호</label>
+                        <div class="col-3">
+                            <input type="password" name="pwd" id="pwd"
+                                   class="form-control border-danger">
+                        </div>
+                        <div class="col-auto">
+                            <span id="pwdmsg" class="form-text">
+                                6~16 자의 영문 소문자, 숫자와 특수기호(_)만 사용할 수 있습니다.
+                            </span>
+                        </div>
+                    </div>
+                    <div class="row col-11 offset-1 mb-3 align-items-center">
+                        <label for="repwd" class="col-2 form-label text-danger text-end">비밀번호 확인</label>
+                        <div class="col-3">
+                            <input type="text" name="repwd" id="repwd"
+                                   class="form-control border-danger">
+                        </div>
+                        <div class="col-auto">
+                            <span id="repwdmsg" class="form-text">
+                                이전 항목에서 입력했던 비밀번호를 한 번 더 입력하세요
+                            </span>
+                        </div>
+                    </div>
+                    <div class="row col-11 offset-1 mb-3 align-items-center">
+                        <label for="repwd" class="col-2 form-label text-danger text-end">우편번호</label>
+                        <div class="col-1">
+                            <input type="text" name="zip1" id="zip1"
+                                   class="form-control border-danger bg-light" readonly>
+                        </div>
+                        <div class="col-1">
+                            <input type="text" name="zip2" id="zip2"
+                                   class="form-control border-danger bg-light" readonly>
+                        </div>
+                        <div class="col-3">
+                            <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#zipmodal">
+                                <i class="fas fa-question-circle"></i> 우편번호 찾기 </button>
+                        </div>
+                    </div>
+                    <div class="row col-11 offset-1 mb-3 align-items-center">
+                        <label for="addr1" class="col-2 form-label text-danger text-end">나머지 주소</label>
+                        <div class="col-4">
+                            <input type="text" name="addr1" id="addr1"
+                                   class="form-control border-danger bg-light" readonly>
+                        </div>
+                        <div class="col-4">
+                            <input type="text" name="addr2" id="addr2"
+                                   class="form-control border-danger">
+                        </div>
+                    </div>
                 </div>
                 <div class="row">
                     <div class="col text-center">
@@ -122,6 +149,11 @@
                             <i class="fas fa-times-circle"> 입력취소</i></button>
                     </div>
                 </div>
+
+                <input type="hidden" name="jumin" id="jumin">
+                <input type="hidden" name="zipcode" id="zipcode">
+                <input type="hidden" name="email" id="email">
+                <input type="hidden" name="phone" id="phone">
             </form>
         </div>
 
