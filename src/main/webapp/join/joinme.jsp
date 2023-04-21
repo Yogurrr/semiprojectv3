@@ -158,6 +158,44 @@
         </div>
 
         <%-- 우편번호 폼 모달 --%>
+        <div class="modal fade" id="zipmodal" role="dialog" data-bs-backdrop="static" data-bs-keyboard="false">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3 class="mt-2">우편번호 찾기</h3>
+                        <button type="button" data-bs-dismiss="modal" class="btn btn-light">
+                            <i class="fa-duotone fa-x"></i>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form name="zipcdfrm" id="zipcdfrm">
+                            <div class="row mb-2 col-11 offset-1">
+                                <label class="col-4 form-label text-end" for="searchzip">
+                                    검색하실 주소의 <br />
+                                    동 이름을 입력하세요</label>
+                                <div class="col-4">
+                                    <input type="text" id="searchzip" name="searchzip" class="form-control" />
+                                </div>
+                                <div class="col-auto">
+                                    <button type="button" class="btn btn-dark">검색하기</button>
+                                </div>
+                            </div>
+                            <div class="row mb-2">
+                                <span class="text-center">
+                                    지역의 읍/면/동의 이름을 공백없이 입력하신 후, [검색] 버튼을 클릭하세요
+                                </span>
+                            </div>
+                            <div class="row col-10 offset-1">
+                                <textarea rows="10"></textarea>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer justify-content-end">
+                        <button type="button" data-bs-dismiss="modal" class="btn btn-primary">선택하고 닫기</button>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <script src="https://www.google.com/recaptcha/api.js"></script>
     </div>
