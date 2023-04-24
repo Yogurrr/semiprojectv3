@@ -159,32 +159,33 @@
                                 <option>hotmail.com</option>
                             </select>
                         </div>
+                    </div>
 
-                        <div class="row col-11 offset-1 mb-3 align-items-center">
-                            <label for="tel1" class="col-2 form-label text-danger text-end">전화번호</label>
-                            <div class="col-2">
-                                <select class="form-select border-danger" name="tel1" id="tel1">
-                                    <option>국번</option>
-                                    <option>010</option>
-                                    <option>011</option>
-                                </select>
-                            </div>
-                            <div class="col-2">
-                                <input type="text" name="tel2" id="tel2" class="form-control border-danger">
-                            </div>
-                            <div class="col-2">
-                                <input type="text" name="tel3" id="tel3" class="form-control border-danger">
-                            </div>
+                    <div class="row col-11 offset-1 mb-3 align-items-center">
+                        <label for="tel1" class="col-2 form-label text-danger text-end">전화번호</label>
+                        <div class="col-2">
+                            <select class="form-select border-danger" name="tel1" id="tel1">
+                                <option>국번</option>
+                                <option>010</option>
+                                <option>011</option>
+                            </select>
                         </div>
-
-                        <div class="row col-11 offset-1 mb-5 align-items-center">
-                            <label for="g-recaptcha" class="col-2 form-label text-danger text-end">자동가입방지</label>
-                            <div class="col-3">
-                                <div class="g-recaptcha" data-sitekey="6LdU4OskAAAAAGphv-UlASNVhJs3LGCNl6cfbJJr"></div>
-                                <input type="hidden" name="g-recaptcha" id="g-recaptcha">
-                            </div>
+                        <div class="col-2">
+                            <input type="text" name="tel2" id="tel2" class="form-control border-danger">
+                        </div>
+                        <div class="col-2">
+                            <input type="text" name="tel3" id="tel3" class="form-control border-danger">
                         </div>
                     </div>
+
+                    <div class="row col-11 offset-1 mb-5 align-items-center">
+                        <label for="g-recaptcha" class="col-2 form-label text-danger text-end">자동가입방지</label>
+                        <div class="col-3">
+                            <div class="g-recaptcha" data-sitekey="6LdU4OskAAAAAGphv-UlASNVhJs3LGCNl6cfbJJr"></div>
+                            <input type="hidden" name="g-recaptcha" id="g-recaptcha">
+                        </div>
+                    </div>
+
                 </div>
                 <div class="row">
                     <div class="col text-center">
