@@ -22,7 +22,7 @@
                 <li class="nav-item"><a href="/intro.jsp" class="nav-link">프로젝트 소개</a></li>
                 <li class="nav-item"><a href="/join/agree.jsp" class="nav-link">회원가입</a></li>
                 <li class="nav-item"><a href="/board/list.jsp" class="nav-link">게시판</a></li>
-                <li class="nav-item"><a href="/psd/list.jsp" class="nav-link">자료실</a></li>
+                <li class="nav-item"><a href="/pds/list.jsp" class="nav-link">자료실</a></li>
                 <li class="nav-item"><a href="/gallery/list.jsp" class="nav-link">갤러리</a></li>
                 <li class="nav-item"><a href="/admin.jsp" class="nav-link">관리자</a></li>
             </ul>
