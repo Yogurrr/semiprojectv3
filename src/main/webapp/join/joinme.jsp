@@ -113,6 +113,7 @@
                             </span>
                         </div>
                     </div>
+
                     <div class="row col-11 offset-1 mb-3 align-items-center">
                         <label for="repwd" class="col-2 form-label text-danger text-end">우편번호</label>
                         <div class="col-1">
@@ -128,6 +129,7 @@
                                 <i class="fas fa-question-circle"></i> 우편번호 찾기 </button>
                         </div>
                     </div>
+
                     <div class="row col-11 offset-1 mb-3 align-items-center">
                         <label for="addr1" class="col-2 form-label text-danger text-end">나머지 주소</label>
                         <div class="col-4">
@@ -137,6 +139,52 @@
                         <div class="col-4">
                             <input type="text" name="addr2" id="addr2"
                                    class="form-control border-danger">
+                        </div>
+                    </div>
+
+                    <div class="row col-11 offset-1 mb-3 align-items-center">
+                        <label for="email1" class="col-2 form-label text-danger text-end">전자우편 주소</label>
+                        <div class="col-5">
+                            <div class="input-group">
+                                <input type="text" name="email1" id="email1" class="form-control border-danger">
+                                <span class="input-group-text border-danger">@</span>
+                                <input type="text" name="email2" id="email2" class="form-control border-danger bg-light" readonly>
+                            </div>
+                        </div>
+
+                        <div class="col-3">
+                            <select class="form-select border-danger" id="email3">
+                                <option>-선택하세요-</option>
+                                <option>직접입력하기</option>
+                                <option>naver.com</option>
+                                <option>gmail.com</option>
+                                <option>hotmail.com</option>
+                            </select>
+                        </div>
+
+                        <div class="row col-11 offset-1 mb-3 align-items-center">
+                            <label for="tel1" class="col-2 form-label text-danger text-end">전화번호</label>
+                            <div class="col-2">
+                                <select class="form-select border-danger" name="tel1" id="tel1">
+                                    <option>국번</option>
+                                    <option>010</option>
+                                    <option>011</option>
+                                </select>
+                            </div>
+                            <div class="col-2">
+                                <input type="text" name="tel2" id="tel2" class="form-control border-danger">
+                            </div>
+                            <div class="col-2">
+                                <input type="text" name="tel3" id="tel3" class="form-control border-danger">
+                            </div>
+                        </div>
+
+                        <div class="row col-11 offset-1 mb-5 align-items-center">
+                            <label for="g-recaptcha" class="col-2 form-label text-danger text-end">자동가입방지</label>
+                            <div class="col-3">
+                                <div class="g-recaptcha" data-sitekey=""></div>
+                                <input type="hidden" name="g-recaptcha" id="g-recaptcha">
+                            </div>
                         </div>
                     </div>
                 </div>
