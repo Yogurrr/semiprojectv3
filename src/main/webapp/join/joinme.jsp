@@ -215,8 +215,8 @@
                     </div>
                     <div class="modal-body">
                         <form name="zipfrm" id="zipfrm">
-                            <div class="row mb-2 col-11 offset-1">
-                                <label class="col-3 form-label text-end" for="dong" style="margin-bottom: 10px !important;">
+                            <div class="row justify-content-center align-items-center">
+                                <label class="col-3 form-label text-end ms-5" for="dong" style="margin-bottom: 10px !important;">
                                     검색하실 주소의 <br />
                                     동 이름을 입력하세요</label>
                                 <div class="col-4">
@@ -229,18 +229,39 @@
                                 </div>
                             </div>
                             <div class="row mb-2">
-                                <span class="text-center">
-                                    지역의 읍/면/동의 이름을 공백없이 입력하신 후, [검색] 버튼을 클릭하세요
-                                </span>
+                                <p class="col-12 text-danger text-center">
+                                    지역의 읍/면/동의 이름을 공백없이 입력하신 후, [검색하기] 버튼을 클릭하세요
+                                </p>
                             </div>
-                            <div class="row col-10 offset-1">
-                                <textarea rows="10"></textarea>
+                            <div class="row col-8 offset-2">
+                                <select class="form-select" id="addrlist" name="addrlist" size="10">
+                                    <option>123-456 서울 구로구 구로동</option>
+                                    <option>123-456 서울 구로구 구로동</option>
+                                    <option>123-456 서울 구로구 구로동</option>
+                                    <option>123-456 서울 구로구 구로동</option>
+                                    <option>123-456 서울 구로구 구로동</option>
+                                    <option>123-456 서울 구로구 구로동</option>
+                                    <option>123-456 서울 구로구 구로동</option>
+                                    <option>123-456 서울 구로구 구로동</option>
+                                    <option>123-456 서울 구로구 구로동</option>
+                                    <option>123-456 서울 구로구 구로동</option>
+                                    <option>123-456 서울 구로구 구로동</option>
+                                    <option>123-456 서울 구로구 구로동</option>
+                                    <option>123-456 서울 구로구 구로동</option>
+                                    <option>123-456 서울 구로구 구로동</option>
+                                    <option>123-456 서울 구로구 구로동</option>
+                                    <option>123-456 서울 구로구 구로동</option>
+                                    <option>123-456 서울 구로구 구로동</option>
+                                    <option>123-456 서울 구로구 구로동</option>
+                                    <option>123-456 서울 구로구 구로동</option>
+                                    <option>123-456 서울 구로구 구로동</option>
+                                </select>
                             </div>
                         </form>
                     </div>
                     <div class="modal-footer justify-content-end">
                         <button type="button" data-bs-dismiss="modal" class="btn btn-danger">
-                            <i class="fas fa-check-square" />선택하고 닫기
+                            <i class="fas fa-check-square"></i> 선택하고 닫기
                         </button>
                     </div>
                 </div>
