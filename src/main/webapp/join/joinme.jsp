@@ -23,7 +23,7 @@
             <li class="nav-item"><a href="/intro.jsp" class="nav-link">프로젝트 소개</a></li>
             <li class="nav-item"><a href="/join/agree.jsp" class="nav-link active disabled">회원가입</a></li>
             <li class="nav-item"><a href="/board/list.jsp" class="nav-link">게시판</a></li>
-            <li class="nav-item"><a href="/psd/list.jsp" class="nav-link">자료실</a></li>
+            <li class="nav-item"><a href="/pds/list.jsp" class="nav-link">자료실</a></li>
             <li class="nav-item"><a href="/gallery/list.jsp" class="nav-link">갤러리</a></li>
             <li class="nav-item"><a href="/admin.jsp" class="nav-link">관리자</a></li>
         </ul>
@@ -133,12 +133,10 @@
                     <div class="row col-11 offset-1 mb-3 align-items-center">
                         <label for="addr1" class="col-2 form-label text-danger text-end">나머지 주소</label>
                         <div class="col-4">
-                            <input type="text" name="addr1" id="addr1"
-                                   class="form-control border-danger bg-light" readonly>
+                            <input type="text" name="addr1" id="addr1" class="form-control border-danger bg-light" readonly>
                         </div>
                         <div class="col-4">
-                            <input type="text" name="addr2" id="addr2"
-                                   class="form-control border-danger">
+                            <input type="text" name="addr2" id="addr2" class="form-control border-danger">
                         </div>
                     </div>
 
@@ -182,7 +180,7 @@
                         <div class="row col-11 offset-1 mb-5 align-items-center">
                             <label for="g-recaptcha" class="col-2 form-label text-danger text-end">자동가입방지</label>
                             <div class="col-3">
-                                <div class="g-recaptcha" data-sitekey=""></div>
+                                <div class="g-recaptcha" data-sitekey="6LdU4OskAAAAAGphv-UlASNVhJs3LGCNl6cfbJJr"></div>
                                 <input type="hidden" name="g-recaptcha" id="g-recaptcha">
                             </div>
                         </div>
@@ -216,16 +214,18 @@
                         </button>
                     </div>
                     <div class="modal-body">
-                        <form name="zipcdfrm" id="zipcdfrm">
+                        <form name="zipfrm" id="zipfrm">
                             <div class="row mb-2 col-11 offset-1">
-                                <label class="col-4 form-label text-end" for="searchzip">
+                                <label class="col-3 form-label text-end" for="dong" style="margin-bottom: 10px !important;">
                                     검색하실 주소의 <br />
                                     동 이름을 입력하세요</label>
                                 <div class="col-4">
-                                    <input type="text" id="searchzip" name="searchzip" class="form-control" />
+                                    <input type="text" id="dong" name="dong" class="form-control border-primary" />
                                 </div>
-                                <div class="col-auto">
-                                    <button type="button" class="btn btn-dark">검색하기</button>
+                                <div class="col-3">
+                                    <button type="button" class="btn btn-primary" id="findzipbtn">
+                                        <i class="fas fa-search"></i> 검색하기
+                                    </button>
                                 </div>
                             </div>
                             <div class="row mb-2">
@@ -239,7 +239,9 @@
                         </form>
                     </div>
                     <div class="modal-footer justify-content-end">
-                        <button type="button" data-bs-dismiss="modal" class="btn btn-primary">선택하고 닫기</button>
+                        <button type="button" data-bs-dismiss="modal" class="btn btn-danger">
+                            <i class="fas fa-check-square" />선택하고 닫기
+                        </button>
                     </div>
                 </div>
             </div>
